@@ -3,12 +3,12 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class ProjectCEditorTarget : TargetRules
+public class C_Project02EditorTarget : TargetRules
 {
-	public ProjectCEditorTarget( TargetInfo Target) : base(Target)
+	public C_Project02EditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
-		ExtraModuleNames.AddRange( new string[] { "ProjectC" } );
+		ExtraModuleNames.AddRange( new string[] { "C_Project02" } );
 	}
 }

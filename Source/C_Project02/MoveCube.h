@@ -4,19 +4,20 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "MyActor.generated.h"
+#include "MoveCube.generated.h"
 
 UCLASS()
-class PROJECTC_API AMyActor : public AActor
+class C_PROJECT02_API AMoveCube : public AActor
 {
 	GENERATED_BODY()
 	
 public:	
 	// Sets default values for this actor's properties
-	AMyActor();
+	AMoveCube();
 
+	// StaticMeshコンポーネントを宣言
 	UPROPERTY(VisibleAnywhere)
-		UStaticMeshComponent* VisualMesh;
+	UStaticMeshComponent* VisualMesh;
 
 protected:
 	// Called when the game starts or when spawned
